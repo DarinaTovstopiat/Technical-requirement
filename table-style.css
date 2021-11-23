@@ -1,0 +1,29 @@
+table {
+	font-family: "Roboto", sans-serif;
+	font-size: 12px;
+	color: #EFF8FD;
+	border-spacing: 0;
+	border-color: #EFF8FD;
+	text-align: center;
+	text-decoration: none;
+}
+
+th {
+	padding: 20px 30px;
+}
+
+th, td {
+	border-style: solid;
+	border-width: 1px 1px 1px 1px;
+	border-color: #EFF8FD;
+	font-color:#EFF8FD;
+}
+
+td {
+	padding: 20px 30px;
+}
+
+#table{
+	background: #395A71;
+	text-decoration: none;
+}

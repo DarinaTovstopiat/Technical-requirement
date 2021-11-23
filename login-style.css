@@ -1,0 +1,61 @@
+body{
+ background-image: url("header-bg.jpg");
+}
+
+.container-login{
+ width:450px;
+ background-color: #395A71;
+ margin: 250px auto 0 auto;
+ text-align: center;
+ padding-bottom: 20px;
+ border-radius: 10px;
+}
+.container-login img{
+ width:120px;
+ height:120px;
+ margin: -60px 0 30px 0;
+ border: 5px solid #395A71;
+ border-radius: 50%;
+}
+
+input[type="text"],input[type="password"]{
+ width: 300px;
+ height:50px;
+ font-size: 18px;
+ margin-bottom: 25px;
+ border-radius: 4px;
+ padding-left: 40px;
+}
+.dws-input input:hover{
+ box-shadow: 0 0 6px 3px rgba(58, 219, 253, 0.35);
+}
+.dws-submit {
+ padding: 13px 30px;
+ margin: 5px 0 20px 0;
+ font-size: 15px;
+ color: #DBEFF8;
+ background-color: #395A71;
+ border-color: #DBEFF8;
+ border-radius: 7px;
+ cursor: pointer;
+}
+.dws-submit:hover{
+ transition: all 0.5s;
+ background: #DBEFF8;
+ color: #395A71;
+}
+
+.dws-input::before{
+ font-family: "Roboto";
+ position: absolute;
+ font-size: 30px;
+ color: #2c536c;
+}
+
+.dws-input:hover::before{
+ color: #319ebc;
+ transition: all 0.3s;
+}
+
+
+

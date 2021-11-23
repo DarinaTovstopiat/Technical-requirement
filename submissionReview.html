@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Technical requirement</title>
+		<link rel="stylesheet" href="card.css">
+	</head>
+	<body>
+		<template>
+			<div class="card">
+			    <h2>Job evaluation</h2>
+			    <img height="256" width="256" alt="avatar">
+			    <div class="content-wrap">
+			        <p class="name">{{ results.name + ' ' + results.surname }}</p>
+			        <p class="email">{{ results.email }}</p>
+			        <p class="url">{{ results.gitHubURL }}</p>
+			    </div>
+			</div>
+			<div class="container">
+			    <h3>Code structure</h3>
+			    <form action="/">
+				    <input type="hidden" v-bind:value="results.id" name="submissionId">
+				    <div v-for="item in results.feedback.criteria" :key="item.id">
+				        <input type="hidden" v-bind:value="item.id" name="criterionId">
+				        <input class="custom-checkbox " v-bind:id="'checkbox'+item.id" type="checkbox" v-bind:checked="item.isPassed">
+				        <label v-bind:for="'checkbox'+item.id">{{ item.title }}</label>
+				    </div>
+			    </form>
+			    <button>save</button>
+			</div>
+		</template>
+	</body>
+</html>

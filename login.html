@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Technical requirement</title>
+		<link rel="stylesheet" href="card.css">
+	</head>
+	<body>
+		<template>
+			<div class="container-login" id="login-form">
+				<img src="avatar.png">
+				<form>
+					<div class="dws-input">
+						<input v-model="postBody.username"  type="text" name="username" placeholder="Username">
+					</div>
+					<div class="dws-input">
+						<input v-model="postBody.password" type="password" name="password" placeholder="Password">
+					</div>
+					<input type="hidden" v-model="postBody.role">
+					<button v-on:click="login" class="dws-submit" type="button" name="submit">Send</button>
+				</form>
+			</div>
+		</template>
+	</body>
+</html>
+
+ничего не меняла, только добавила
