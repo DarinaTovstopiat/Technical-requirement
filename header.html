@@ -1,0 +1,14 @@
+<header id="header" class="header">
+	<div class="nav">
+		<img src="/img/logo.png" alt="Technical requirement" class="logo">
+		<ul class="menu">
+			<li>
+				<router-link v-if="this.$router.currentRoute.path!=='/'" to="/">Home</router-link>
+			</li>
+			<li>
+				<router-link v-if="this.$router.currentRoute.path!=='/' && this.$router.currentRoute.path!=='/Submissions'" to="/Submissions">Results table</router-link>
+			</li>
+		</ul>
+		<button class="log-out" v-on:click="logOut" type="button" v-if="this.$router.currentRoute.path==='/' && this.token">Exit</button>
+	</div>
+</header>

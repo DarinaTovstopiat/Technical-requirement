@@ -1,0 +1,51 @@
+router-link {
+	text-decoration: none;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+.header {
+	padding-top: 57px;
+	color: #fff;
+	padding-bottom: 322px
+}
+
+header router-link {
+	color: #fff;
+}
+
+.logo {
+	margin-right: 69px; 
+}
+
+.menu {
+	display: flex; 
+}
+
+.menu li router-link {
+	text-transform: uppercase; 
+	font-size: 14px;
+	letter-spacing: 0.1em;
+}
+
+.menu li router-link:hover {
+	border-bottom: 1px solid #fff;
+}
+
+.menu li {
+	margin-right: 40px; 
+}
+
+.log-out {
+	font-size: 17px;
+	margin-left: auto;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+}
