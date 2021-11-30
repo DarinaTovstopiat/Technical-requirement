@@ -1,0 +1,27 @@
+<template>
+	<div>
+		<h2>Thank you for your submission!</h2>
+		<p>You can check the results here:</p>
+		<router-link class="result" v-bind:to="'Submission/Results'+$route.params.guid">{{'http://localhost:8080/Submission/Results'+$route.params.guid}}</router-link><br>
+	</div>
+</template>
+
+.result{
+	width: 255px;
+	height: 70px;
+	display: inline;;
+	font-size: 20px;
+	text-align: center;
+	letter-spacing: 0.1em; 
+	padding: 17px 47px;
+	border: 2px solid #395A71;
+	transition: all 0.5s ease;
+	border-radius: 10px;
+	text-decoration: none;
+}
+
+.result:hover {
+	background: #2482BF;
+    color: #395A71;
+    text-decoration: none;
+}

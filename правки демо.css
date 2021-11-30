@@ -1,0 +1,15 @@
+/*добавить в стили к AppVue*/
+
+.log-out {
+    padding: 30px;
+    display:block;
+    float:right;
+    background-color: #0A1227;
+    color: white;
+    border-color: white;
+    border-radius: 20px;
+    text-align:center;
+    height: 20px;
+    width: 50px;
+}
+
